@@ -1,0 +1,47 @@
+div {
+  width: 100%;
+  border: 3px solid mediumpurple;
+}
+ul,
+li {
+  list-style-type: none;
+  text-align: center;
+}
+.table-information {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0;
+}
+.info {
+  padding: 10px 0px 10px 0px;
+  border-bottom: 2px solid mediumpurple;
+}
+.info-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.info-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid mediumpurple;
+}
+.info-name {
+  font-weight: bold;
+  font-size: 25px;
+  color: mediumpurple;
+}
+.info-icons {
+  padding-top: 10px;
+}
+.info-icons {
+  text-decoration: none;
+}
+.info-contact {
+  color: green;
+}
+.info-contact:hover {
+  color: mediumslateblue;
+  background-color: plum;
+  cursor: pointer;
+}

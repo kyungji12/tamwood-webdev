@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0713 Index 1</title>
+  </head>
+  <body>
+    <audio controls>
+      <!-- option : autoplay (remove controls)-->
+      <source src="" type="audio/mp3" />
+    </audio>
+    <br />
+    <br />
+    <iframe
+      width="420"
+      height="315"
+      src="https://www.youtube.com/embed/tgbNymZ7vqY"
+    ></iframe>
+    <br />
+    <form>
+      <label>First Name</label>
+      <input type="text" />
+      <input type="checkbox" id="html" name="html" value="html" />
+      <label id="html">HTML</label>
+      <input type="checkbox" id="css" name="css" value="css" />
+      <label id="css">CSS</label>
+      <input type="checkbox" id="js" name="js" value="js" />
+      <label id="js">JS</label>
+    </form>
+    <br />
+    <form>
+      <input type="radio" id="html" name="group1" value="html" />
+      <label id="html">HTML</label>
+
+      <input type="radio" id="css" name="group1" value="css" />
+      <label id="css">CSS</label>
+
+      <input type="radio" id="js" name="group1" value="js" />
+      <label id="js">JS</label>
+    </form>
+    <br />
+    <form>
+      <label for="fname">First name: </label>
+      <input type="text" id="fname" name="fname" />
+      <label for="lname">Last name: </label>
+      <input type="text" id="lname" name="lname" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <form>
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+      <br />
+      <label for="birthday">Select Birthday</label>
+      <input type="date" id="birthday" name="bd1" />
+      <br />
+      <input type="date" id="id1" name="mindate" min="1998-12-12" />
+      <input type="date" id="id2" name="maxdate" max="2023-07-13" />
+      <br />
+      <input type="email" id="email1" name="email" />
+      <label for="email1">Email</label>
+      <br />
+      <input type="image" src="" alt="arrow icon" /><br />
+      <input type="file" id="file1" name="fileinfo" />
+      <br />
+      <input
+        type="tel"
+        id="phonenum"
+        name="mobilenum"
+        placeholder="123-123-1234"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required
+      />
+      <br />
+      <input type="search" id="s1" name="gsearch" />
+      <br />
+      <input type="text" id="id1" name="john" value="John" readonly />
+      <br />
+      <label for="browser">Choose your browser from the list:</label>
+      <input list="browsers" name="browser" id="browser" />
+
+      <datalist id="browsers">
+        <option value="Edge"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+    </form>
+  </body>
+</html>
