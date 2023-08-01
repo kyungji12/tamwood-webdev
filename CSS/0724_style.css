@@ -1,0 +1,29 @@
+.flex-container {
+  display: flex;
+}
+.flex-item {
+  border: 1px solid red;
+}
+.break-word {
+  word-break: break-all;
+}
+.parallax {
+  width: 100%;
+  height: 1500px;
+  background-color: lightcoral;
+  word-wrap: break-word;
+  background-image: url(../image/yooni_nobg.png);
+  /* background-size: 100%; */
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.parallax img {
+  width: 100%;
+}
+/* media query css */
+/* @media only screen and (max-width: 350px) {
+  body {
+    background-color: lightcyan;
+  }
+} */

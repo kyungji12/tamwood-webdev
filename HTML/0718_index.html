@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0718 Index</title>
+    <style>
+      .animation-color-change {
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        animation-name: animation1;
+        animation-duration: 2s;
+      }
+
+      @keyframes animation1 {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: yellow;
+        }
+      }
+      .animation-circle-main {
+        width: 350px;
+        height: 350px;
+        border: 1px solid mediumpurple;
+        border-radius: 50%;
+        position: relative;
+      }
+      .animation-circle-dot {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: mediumpurple;
+        animation: animation2 6s linear infinite;
+      }
+      @keyframes animation2 {
+        /* 0% {
+          transform: rotate(0deg) translate(-175px) rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg) translate(-175px) rotate(-360deg);
+        } */
+        from {
+          transform: rotate(0deg) translate(-175px) rotate(0deg);
+          /* background-color: red; */
+        }
+        to {
+          transform: rotate(360deg) translate(-175px) rotate(-360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animation</h1>
+
+    <div class="animation-color-change"></div>
+
+    <p>
+      <b>Note:</b> When an animation is finished, it goes back to its original
+      style.
+    </p>
+    <div class="animation-circle-main">
+      <div class="animation-circle-dot"></div>
+    </div>
+  </body>
+</html>
