@@ -1,51 +1,45 @@
-@import "./resets";
-@import "./variables";
+$primary-color: grey;
+$secondary-color: white;
+$font-weight: (
+  "regular": 200,
+  "italic": 400,
+  "bold": 800,
+);
+@function fontweight($weightname) {
+  @return map-get($font-weight, $weightname);
+}
 
-@mixin flexContainer {
-  font-style: italic;
-  align-items: center;
+@mixin styleflex {
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
-@mixin theme($light-theme: true) {
-  @if $light-theme {
-    background-color: lighten($background-color, 100%);
-    color: darken($text-color, 100%);
-  }
-}
-@mixin mobile {
+
+@mixin screenresolution {
   @media (max-width: 800px) {
     @content;
   }
 }
 
-@function weights($weight-name) {
-  @return map-get($font-weight, $weight-name);
+@mixin stylefont {
+  font-size: 30px;
+  font-style: italic;
 }
 
-@function flexDirection($direction) {
-  @return $direction;
-}
-
-body {
-  background-color: $background-color;
-  color: $text-color;
-  //   font-weight: map-get($font-weight, italic);
-  font-weight: weights(italic);
-}
 .main {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: flexDirection(column);
-  &_paragraph {
-    @include flexContainer;
+  background-color: $primary-color;
+  @include screenresolution() {
+    background-color: pink;
+    @include stylefont;
   }
-}
-.light {
-  //   @include theme($light-theme: true);
-  @include theme(true);
-  @include mobile {
-    flex-direction: column;
-    background-color: lightgreen;
+  &_child {
+    // background-color: lightpink;
+    @include styleflex;
+    &_paragraph {
+      color: $secondary-color;
+      width: 80%;
+      margin: 0 auto;
+      font-weight: fontweight("regular");
+    }
   }
 }

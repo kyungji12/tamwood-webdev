@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: skyblue;
+  color: white;
+  font-weight: 800;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.main_paragraph {
+  font-style: italic;
+  align-items: center;
+  justify-content: center;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+@media (max-width: 800px) {
+  .light {
+    flex-direction: column;
+    background-color: lightgreen;
+  }
+}/*# sourceMappingURL=main.css.map */

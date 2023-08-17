@@ -1,34 +1,21 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: skyblue;
-  color: white;
-  font-weight: 800;
-}
-
 .main {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-.main_paragraph {
-  font-style: italic;
-  align-items: center;
-  justify-content: center;
-}
-
-.light {
-  background-color: white;
-  color: black;
+  background-color: grey;
 }
 @media (max-width: 800px) {
-  .light {
-    flex-direction: column;
-    background-color: lightgreen;
+  .main {
+    background-color: pink;
+    font-size: 30px;
+    font-style: italic;
   }
+}
+.main_child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_child_paragraph {
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 200;
 }/*# sourceMappingURL=main.css.map */
