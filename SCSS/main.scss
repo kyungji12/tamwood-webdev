@@ -9,6 +9,13 @@ $font-weight: (
   @return map-get($font-weight, $weightname);
 }
 
+@mixin theme($lightname) {
+  @if $lightname {
+    background-color: lighten($primary-color, 100%);
+    color: darken($secondary-color, 100%);
+  }
+}
+
 @mixin styleflex {
   display: flex;
   justify-content: center;
